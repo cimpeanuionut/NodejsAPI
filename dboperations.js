@@ -1,7 +1,6 @@
 var config = require('./dbconfig');
 const sql = require('mssql');
 
-
 async function getOrders() {
     try {
         let pool = await sql.connect(config);
